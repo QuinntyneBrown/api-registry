@@ -10,6 +10,7 @@ namespace ApiRegistry.Dtos
             Name = entity.Name;
             Description = entity.Description;
             SwaggerUri = entity.SwaggerUri;
+            GitHubRepoUri = entity.GithubRepoUri;
 
         }
 
@@ -19,5 +20,6 @@ namespace ApiRegistry.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
         public string SwaggerUri { get; set; }
+        public string GitHubRepoUri { get; set; }
     }
 }

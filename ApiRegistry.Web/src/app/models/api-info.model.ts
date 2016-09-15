@@ -3,4 +3,5 @@ export class ApiInfo {
     public name: string;
     public description: string;
     public swaggerUri: string;
+    public gitHubRepoUri: string;
 }
