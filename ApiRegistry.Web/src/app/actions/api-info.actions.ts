@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { ApiInfoService } from "../services";
 import { AppState, AppStore } from "../store";
-import { ADD_API_INFO_SUCCESS, GET_API_INFO_SUCCESS, REMOVE_API_INFO_SUCCESS } from "../constants";
+import { API_INFO_ADD_SUCCESS, API_INFO_GET_SUCCESS, API_INFO_REMOVE_SUCCESS } from "../constants";
 import { ApiInfo } from "../models";
 import { Observable } from "rxjs";
 import { guid } from "../utilities";
@@ -16,7 +16,7 @@ export class ApiInfoActions {
         this._apiInfoService.add(apiInfo)
             .subscribe(book => {
                 this._store.dispatch({
-                    type: ADD_API_INFO_SUCCESS,
+                    type: API_INFO_ADD_SUCCESS,
                     payload: apiInfo
                 },newGuid);                
             });
@@ -27,7 +27,7 @@ export class ApiInfoActions {
         return this._apiInfoService.get()
             .subscribe(apiInfos => {
                 this._store.dispatch({
-                    type: GET_API_INFO_SUCCESS,
+                    type: API_INFO_GET_SUCCESS,
                     payload: apiInfos
                 });
                 return true;
@@ -38,7 +38,7 @@ export class ApiInfoActions {
         return this._apiInfoService.remove({ id: options.id })
             .subscribe(apiInfo => {
                 this._store.dispatch({
-                    type: REMOVE_API_INFO_SUCCESS,
+                    type: API_INFO_REMOVE_SUCCESS,
                     payload: options.id
                 });
                 return true;
@@ -49,7 +49,7 @@ export class ApiInfoActions {
         return this._apiInfoService.getById({ id: options.id })
             .subscribe(apiInfo => {
                 this._store.dispatch({
-                    type: GET_API_INFO_SUCCESS,
+                    type: API_INFO_GET_SUCCESS,
                     payload: [apiInfo]
                 });
                 return true;

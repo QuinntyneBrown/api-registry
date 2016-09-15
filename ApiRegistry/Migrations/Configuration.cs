@@ -14,6 +14,9 @@ namespace ApiRegistry.Migrations
 
         protected override void Seed(ApiRegistry.Data.DataContext context)
         {
+            UserConfiguration.Seed(context);
+            RoleConfiguration.Seed(context);
+            ApiInfoConfiguration.Seed(context);
 
         }
     }

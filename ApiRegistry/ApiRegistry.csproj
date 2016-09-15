@@ -220,6 +220,9 @@
     <Compile Include="Controllers\ApiInfoController.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Migrations\UserConfiguration.cs" />
+    <Compile Include="Migrations\RoleConfiguration.cs" />
+    <Compile Include="Migrations\ApiInfoConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

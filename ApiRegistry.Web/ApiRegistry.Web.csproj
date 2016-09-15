@@ -198,6 +198,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="src\styles\index.scss" />
+    <Content Include="src\styles\_breakpoints.scss" />
+    <Content Include="src\styles\_normalize.scss" />
+    <Content Include="src\styles\_varibles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -290,6 +294,7 @@
   </Target>
   -->
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\utilities\append-to-body-async.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\main.ts" />
@@ -322,7 +327,6 @@
     <TypeScriptCompile Include="src\app\store\index.ts" />
     <TypeScriptCompile Include="src\app\utilities\index.ts" />
     <TypeScriptCompile Include="src\app\utilities\add-or-update.ts" />
-    <TypeScriptCompile Include="src\app\utilities\append-to-body-async.ts" />
     <TypeScriptCompile Include="src\app\utilities\create-element.ts" />
     <TypeScriptCompile Include="src\app\utilities\extend-css-async.ts" />
     <TypeScriptCompile Include="src\app\utilities\extract-data-from-http-response.ts" />
@@ -333,9 +337,9 @@
     <TypeScriptCompile Include="src\app\utilities\remove-element.ts" />
     <TypeScriptCompile Include="src\app\utilities\set-opacity-async.ts" />
     <TypeScriptCompile Include="src\app\actions\api-info.actions.ts" />
-    <TypeScriptCompile Include="src\app\constants\add-api-info-success.action.ts" />
-    <TypeScriptCompile Include="src\app\constants\get-api-info-success.action.ts" />
-    <TypeScriptCompile Include="src\app\constants\remove-api-info-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\api-info-add-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\api-info-get-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\api-info-remove-success.action.ts" />
     <TypeScriptCompile Include="src\app\models\api-info.model.ts" />
     <TypeScriptCompile Include="src\app\services\api-info.service.ts" />
     <TypeScriptCompile Include="src\app\store\api-info.reducer.ts" />
