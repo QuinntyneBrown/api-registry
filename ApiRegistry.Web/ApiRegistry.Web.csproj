@@ -213,6 +213,18 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\components\page-footer.component.html">
+      <DependentUpon>page-footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-footer.component.scss">
+      <DependentUpon>page-footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.html">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.scss">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\pages\landing-page.component.html">
       <DependentUpon>landing-page.component.ts</DependentUpon>
     </Content>
@@ -328,6 +340,8 @@
     <TypeScriptCompile Include="src\app\services\api-info.service.ts" />
     <TypeScriptCompile Include="src\app\store\api-info.reducer.ts" />
     <TypeScriptCompile Include="src\app\pages\landing-page.component.ts" />
+    <TypeScriptCompile Include="src\app\components\page-header.component.ts" />
+    <TypeScriptCompile Include="src\app\components\page-footer.component.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>
